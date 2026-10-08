@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="js/JQuery_min.js"></script>
+    <script src="js/register.js"></script>
+    <link rel="stylesheet" href="css/register.css">
+</head>
+
+<body>
+    <div class="toubu">
+        <div class="top">
+            <div class="logo_box">
+                <img src="../images/logo.jpg" alt="">
+            </div>
+            <p class="top_title">食堂</p>
+        </div>
+        <div class="nav">
+            <div class="nav_nei">
+                <ul class="nav_ul">
+                    <li><a href="../home/home.html">首页</a></li>
+                    <li><a href="../amplifier/amplifier.html">环境</a></li>
+                    <li><a href="../food/food.html">美食</a></li>
+                    <li><a href="../register/register.html">登录</a></li>
+                    <li><a href="../more/more.html">关于</a></li>
+                </ul>
+                <div class="nav_box">
+                    <div class="nav_sou">
+                        <img src="../images/svg/search.svg" alt="">
+                        <input type="text" value="请输入内容">
+                    </div>
+                    <!-- <div class="nav_img_box">
+                        <img src="../images/tou.png" alt="">
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- content -->
+    <div class="content">
+        <div class="log_img">
+            <img src="../images/food2/dl.jpg" alt="">
+        </div>
+        <div class="logOn_wai">
+            <div class="logOn_move">
+                <div class="logOn">
+                    <form action="" class="form">
+                        <div class="form_img_box">
+                            <img src="../images/svg/logOn/账户.svg" alt="">
+                        </div>
+                        <div class="mailbox">
+                            <div class="mai_box">
+                                <img src="../images/svg/logOn/用户名.svg" alt="">
+                            </div>
+                            <input type="text" placeholder="用户名" required
+                                pattern="(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9_-]{2,16}" id="name" class="log_text">
+                        </div>
+                        <div class="mailbox">
+                            <div class="mai_box">
+                                <img src="../images/svg/logOn/密码.svg" alt="">
+                            </div>
+                            <input type="password" placeholder="密码" required class="log_text" pattern="[0-9]{8,16}"
+                                id="password">
+                        </div>
+                        <input type="submit" value="登录" class="log_sub">
+                        <div class="move">
+                            还没有账号？立刻注册！
+                        </div>
+                        <p class="move_p1">默认密码:Zard1 12345678</p>
+                    </form>
+
+                    <form action="#" class="enroll">
+                        <div class="enroll_box">
+                            <div class="esc">
+                                <img src="../images/svg/logOn/返回.svg" alt="">
+                            </div>
+                            <div class="enroll_img_box">
+                                <p class="enroll_title">注册</p>
+                                <img src="../images/svg/logOn/注册.svg" alt="">
+                            </div>
+
+                            <div class="enroll_wai">
+
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">用户名</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/用户名.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="请使用数字加字母的组合" required
+                                        pattern="(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9_-]{2,16}">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">密码</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/密码.svg" alt="">
+                                    </div>
+                                    <input type="password" placeholder="密码在8-16位之间" required pattern="[0-9]{8,16}">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">邮箱</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/邮箱.svg" alt="">
+                                    </div>
+                                    <input type="email" placeholder="请输入..." required>
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">手机号</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/手机号.svg" alt="">
+                                    </div>
+                                    <input type="phone" placeholder="请输入..." pattern="[0-9]{8,13}">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">性别</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/性别.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="请输入...">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">地址</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/地址.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="请输入...">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">爱好</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/爱好.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="请输入...">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">出生日期</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/日期.svg" alt="">
+                                    </div>
+                                    <input type="date " placeholder="请输入...">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">公司</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/公司信息.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="请输入..."
+                                        pattern="(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9_-]{2,16}">
+                                </div>
+                                <div class="enroll_input">
+                                    <p class="enroll_p1">个人签名</p>
+                                    <div class="enroll_inp_img">
+                                        <img src="../images/svg/logOn/签名.svg" alt="">
+                                    </div>
+                                    <input type="text" placeholder="请输入...">
+                                </div>
+                                <input type="submit" value="注册" class="enroll_sub">
+                            </div>
+
+                        </div>
+
+
+                    </form>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <footer>
+        <p>版权归Zard所有 Copyright © 2013-2023 备案号：闽ICP备15012807号-1</p>
+    </footer>
+</body>
+
+</html>

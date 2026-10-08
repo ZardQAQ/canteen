@@ -1,0 +1,465 @@
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.toubu {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.7);
+    transition: all 0.3s;
+    position: relative;
+    z-index: 3;
+}
+
+.top {
+    width: 100%;
+    display: flex;
+    backdrop-filter: blur(5px);
+    border-bottom: 2px solid rgb(227, 227, 227);
+}
+
+.logo_box {
+    width: 50px;
+    padding: 10px 15px;
+}
+
+.logo_box img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.top_title {
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+}
+
+/* 导航兰 */
+.nav {
+    width: 100%;
+    backdrop-filter: blur(3px);
+    box-sizing: border-box;
+    padding: 0 15px;
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.408);
+    transition: all 0.3s;
+    position: fixed;
+    top: 75.5px;
+    z-index: 10;
+}
+
+.nav_nei {
+    width: 1330px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.nav_ul {
+    width: 65%;
+    display: flex;
+    list-style: none;
+}
+
+.nav_ul li {
+    width: 100px;
+}
+
+.nav_ul li a {
+    display: block;
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    color: rgb(14, 14, 17);
+    cursor: pointer;
+    border: 2px solid transparent;
+    transition: all 0.3s;
+    box-sizing: border-box;
+}
+
+.nav_ul li:nth-child(4) a {
+    background-color: rgba(255, 255, 255, 0.613);
+    color: #d72222;
+    border-bottom: 2px solid #d72222;
+}
+
+.nav_ul li:hover a {
+
+    background-color: rgba(255, 255, 255, 0.613);
+    color: #484848;
+    border-bottom: 2px solid #34343472;
+}
+
+.nav_box {
+    width: 35%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.nav_sou {
+    width: 120px;
+    box-sizing: border-box;
+    padding: 10px 0;
+    margin: 0 50px;
+    display: flex;
+    justify-content: right;
+    position: relative;
+    cursor: pointer;
+}
+
+.nav_sou img {
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+.nav_sou input {
+    display: block;
+    width: 100%;
+    padding: 5px 10px;
+    color: #999;
+    border: none;
+    border-radius: 35px;
+}
+
+.nav_img_box {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+
+.nav_img_box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+/* 内容 */
+.content{
+    width: 100%;
+    height: calc(100vh - 75.5px - 35px) ;
+    overflow: hidden;
+    transform-style: preserve-3d;
+    
+}
+
+.log_img{
+    width: 100%;
+    height: 100% ;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.log_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: blur(3px);
+    transform:scale(1.2,1.2);
+}
+.logOn_wai{
+    width: 100%;
+    height: 100%;
+
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.logOn_move{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    left: 0;
+    top: 0;
+}
+.logOn{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    transition: all 0.5s;
+    transform:  rotateX(0deg);
+}
+.form{
+    width: 500px;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.423);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.613);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) translateZ(300px);;
+}
+.form_img_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.form_img_box img{
+    width: 160px;
+}
+.mailbox{
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    display: flex;
+    border: 1px solid white;
+    border-radius: 50px;
+    box-sizing: border-box;
+    padding: 0 10px;
+}
+.mai_box{
+    width: 30px;
+    box-sizing: border-box;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+}
+.mai_box img{
+    width: 100%;
+}
+.mailbox input{
+    width: 90%;
+    border:none;
+    box-sizing: border-box;
+    background-color: unset;
+    color: white;
+    font-size: 20px;
+}
+.mailbox input:focus{
+    outline: none;
+}
+.mailbox input::-webkit-input-placeholder {
+    color: white;
+}
+.log_sub{
+    width: 100%;
+    border: none;
+    background-color: white;
+    color: unset;
+    line-height: 40px;
+    border-radius: 40px;
+    letter-spacing: 20px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.move{
+    float: right;
+
+    text-align: right;
+    color: white;
+    text-decoration: underline;
+    margin: 20px 0;
+    cursor: pointer;
+    user-select: none;
+}
+.move_p1{
+    color: #0000009c;
+}
+
+
+.enroll{
+    width: 1000px;
+    box-sizing: border-box;
+    padding: 20px 50px;
+    border: 1px solid white;
+    background-color: rgba(0, 0, 0, 0.423);
+    border-radius: 30px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.613);
+    /* transition: all 0.4s; */
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%) rotateX(-90deg) translateZ(250px);
+}
+.enroll_box{
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.esc{
+    /* width: 100%; */
+    height: 35px;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    position: relative;
+    left: -20px;
+    cursor: pointer;
+}
+.esc img{
+    width: 30px;
+    height: 30px;
+}
+.enroll_img_box{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    /* position: absolute;
+    right: -80px; */
+}
+.enroll_title{
+    font-size: 25px;
+    font-weight: 700;
+    color: white;
+}
+.enroll_img_box img{
+    width: 30px;
+    position: relative;
+    right: -10px;
+    top: -20px;
+}
+.enroll_wai{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.enroll_input{
+    width: 45%;
+    display: flex;
+    margin: 25px 0 5px 0;
+    position: relative;
+
+}
+.enroll_inp_img{
+    width: 20%;
+    box-sizing: border-box;
+    padding: 5px;
+}
+.enroll_inp_img img{
+    width: 100%;
+}
+.enroll_input input{
+    width: 80%;
+    border: none;
+    background-color: unset;
+    border-bottom: 2px solid white;
+    color: white;
+    box-sizing: border-box;
+    padding: 5px 10px;
+}
+.enroll_input input:focus{
+    outline: none;
+}
+.enroll_input input::placeholder{
+    color: white;
+    opacity: 0.7;
+}
+.enroll_p1{
+    width: 100%;
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    position: absolute;
+    top: -10px;
+    left: 20%;
+}
+.enroll_sub{
+    width: 50%;
+    line-height: 30px;
+    border-radius: 30px;
+    margin: 30px auto;
+    background-color: white;
+    color: black;
+    text-indent: 10px 0;
+    cursor: pointer;
+    border: none;
+}
+
+
+/* 页尾 */
+footer {
+    width: 100%;
+    text-align: center;
+    background-color: #343434;
+    position: relative;
+    z-index: 5;
+}
+
+footer p {
+    width: 100%;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    line-height: 35px;
+    text-align: center;
+}
+
+@media screen and (max-width:1350px) {
+    .nav_nei{
+        width: 100%;
+    }
+    .ban_but_box {
+        width: 90%;
+    }
+    .nav_box{
+        width: auto;
+    }
+    .nav_sou{
+        width: 20px;
+        margin: 0 10px;
+    }
+    .nav_sou input{
+        display: none;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+
+    .nav_box{
+        display: none;
+    }
+    .nav_ul{
+        width: 100%;
+        justify-content: center;
+    }
+
+    
+    .enroll{
+        width: 80%;
+    }
+    .form{
+        width: 80%;
+    }
+    .enroll{
+        width: 90%;
+        box-sizing: border-box;
+        padding: 20px;
+    }
+    .esc{
+        left: 20px;
+        top: 20px;
+    }
+    .enroll_box{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:480px) {}
